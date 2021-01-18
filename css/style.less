@@ -37,6 +37,7 @@ header {
   background-size    : cover;
   background-repeat  : no-repeat;
   background-position: center;
+  width              : 100%;
 
   nav {
     background-color: rgba(0, 0, 0, 0.6);
@@ -47,7 +48,7 @@ header {
     .nav-content {
       .wrapper();
       display              : grid;
-      grid-template-columns: 270px 630px 270px;
+      grid-template-columns: 1fr 2.5fr 1fr;
       grid-template-rows   : 100px;
       align-items          : center;
       font-size            : 16px;
@@ -144,7 +145,7 @@ header {
   div:nth-child(even) {
     background-color: white;
     .grid-center();
-    grid-template-rows: 100px 1fr 80px;
+    grid-template-rows: 1.5fr 1fr 1.5;
 
     img {
       align-self: end;
@@ -190,19 +191,29 @@ header {
     margin-top           : 45px;
     display              : grid;
     grid-template-columns: repeat(4, 1fr);
+    gap                  : 2.5%;
 
     .item {
-      /* margin-left  : 30px; */
-      margin-bottom: 70px;
+      padding-bottom: 70px;
 
       img {
         width: 270px;
       }
     }
 
+    .product-name {
+      display    : block;
+      padding-top: 15px;
+    }
+
     .product-price {
       font-family: @font-bold;
       font-weight: bold;
+    }
+
+    .product-name,
+    .product-price {
+      padding-left: 30px;
     }
   }
 }
@@ -284,9 +295,9 @@ footer {
       color: @gray;
 
       i {
-        margin   : 0 18px 60px;
-        font-size: 18px;
-        padding-top  : 45px;
+        margin      : 0 18px 60px;
+        font-size   : 18px;
+        padding-top : 45px;
         padding-left: 6px;
       }
     }
@@ -296,8 +307,8 @@ footer {
     .wrapper();
     border-top           : 1px solid #444444;
     display              : grid;
-    grid-template-columns: repeat(3, 300px) 270px;
-    padding-top          : 73px;
+    grid-template-columns: repeat(3, 1fr) 0.9fr;
+    padding-top          : 75px;
 
     .info-title {
       text-transform: uppercase;
@@ -312,7 +323,7 @@ footer {
 
       span {
         display    : block;
-        padding-top: 18px;
+        padding-top: 20px;
 
         i {
           margin-right: 10px;
@@ -324,12 +335,12 @@ footer {
   .copyright {
     background-color: black;
     height          : 50px;
-    margin-top      : 50px;
+    margin-top      : 45px;
     color           : @gray;
     .grid-center();
   }
 }
 
 .owl-theme .owl-nav.disabled+.owl-dots {
-  margin-top: 0!important;
+  margin-top: 0 !important;
 }

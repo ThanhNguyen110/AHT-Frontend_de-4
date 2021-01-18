@@ -27,6 +27,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  width: 100%;
 }
 header nav {
   background-color: rgba(0, 0, 0, 0.6);
@@ -38,7 +39,7 @@ header nav .nav-content {
   width: 1170px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 270px 630px 270px;
+  grid-template-columns: 1fr 2.5fr 1fr;
   grid-template-rows: 100px;
   align-items: center;
   font-size: 16px;
@@ -125,7 +126,7 @@ header .promotion .promotion-btn {
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-template-rows: 100px 1fr 80px;
+  grid-template-rows: 1.5fr 1fr 1.5;
 }
 .gallery div:nth-child(even) img {
   align-self: end;
@@ -168,17 +169,25 @@ header .promotion .promotion-btn {
   margin-top: 45px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 2.5%;
 }
 .product .product-list .item {
-  /* margin-left  : 30px; */
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 }
 .product .product-list .item img {
   width: 270px;
 }
+.product .product-list .product-name {
+  display: block;
+  padding-top: 15px;
+}
 .product .product-list .product-price {
   font-family: poppins-bold;
   font-weight: bold;
+}
+.product .product-list .product-name,
+.product .product-list .product-price {
+  padding-left: 30px;
 }
 .feedback {
   width: 1170px;
@@ -261,8 +270,8 @@ footer .info {
   margin: 0 auto;
   border-top: 1px solid #444444;
   display: grid;
-  grid-template-columns: repeat(3, 300px) 270px;
-  padding-top: 73px;
+  grid-template-columns: repeat(3, 1fr) 0.9fr;
+  padding-top: 75px;
 }
 footer .info .info-title {
   text-transform: uppercase;
@@ -276,7 +285,7 @@ footer .info .info-content {
 }
 footer .info .info-content span {
   display: block;
-  padding-top: 18px;
+  padding-top: 20px;
 }
 footer .info .info-content span i {
   margin-right: 10px;
@@ -284,12 +293,12 @@ footer .info .info-content span i {
 footer .copyright {
   background-color: black;
   height: 50px;
-  margin-top: 50px;
+  margin-top: 45px;
   color: #777777;
   display: grid;
   justify-items: center;
   align-items: center;
 }
 .owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: 0!important;
+  margin-top: 0 !important;
 }
