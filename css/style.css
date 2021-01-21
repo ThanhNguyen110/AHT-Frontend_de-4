@@ -23,6 +23,11 @@
     font-size: 1.4rem !important;
   }
 }
+@media (max-width: 768px) {
+  .product-icon li {
+    margin-top: 10px !important;
+  }
+}
 @media (min-width: 576px) and (max-width: 767.98px) {
   .container {
     max-width: 594px;
