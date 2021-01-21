@@ -2,6 +2,7 @@
 
 @font-regular: poppins-regular;
 @font-bold   : poppins-bold;
+@bg-nav      : rgba(0, 0, 0, 0.6);
 @gray        : #777777;
 
 
@@ -18,21 +19,74 @@
   align-items  : center;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .text-large {
+    font-size: 30px !important;
+  }
+
+  .text-medium {
+    font-size: 20px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
   .container {
     max-width: 594px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   .container {
     max-width: 774px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
   .container {
     max-width: 1014px;
+  }
+
+  .text-large {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .gallery {
+    .gallery-item:nth-child(odd) {
+      padding-right: 0;
+    }
+
+    .gallery-item:nth-child(even) {
+      padding-left: 0;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #navbarExternal {
+    display: none !important;
+  }
+
+  .gallery {
+
+    .gallery-item:nth-child(1),
+    .gallery-item:nth-child(2),
+    .gallery-item:nth-child(4),
+    .gallery-item:nth-child(5) {
+      padding-right: 0;
+    }
+
+    .gallery-item:nth-child(2),
+    .gallery-item:nth-child(3),
+    .gallery-item:nth-child(5),
+    .gallery-item:nth-child(6) {
+      padding-left: 0;
+    }
   }
 }
 
@@ -41,6 +95,23 @@
     max-width: 1194px;
   }
 }
+
+@media (max-width: 991.98px) {
+
+  .nav-link,
+  .nav-icon {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1190px) {
+  .nav-link {
+    .col {
+      margin-right: 15px !important;
+    }
+  }
+}
+
 
 body {
   line-height: 24px;
@@ -56,7 +127,7 @@ header {
   background-position: center;
 
   nav {
-    background-color     : rgba(0, 0, 0, 0.6);
+    background-color     : @bg-nav;
     position             : fixed;
     width                : 100%;
     height               : 100px;
@@ -66,44 +137,50 @@ header {
     align-items          : center;
     font-size            : 16px;
 
-
-    ul {
-      list-style: none;
-      margin-bottom: 0;
-
-      li {
-        display: inline;
-
-        a {
-          color          : white;
-          text-decoration: none;
-        }
-      }
+    .nav-link,
+    .nav-logo {
+      display    : flex;
+      align-items: center;
     }
 
     .nav-icon {
       color     : white;
       text-align: end;
 
-      /* .fa-search {
-        padding-right: 25px;
-      } */
-
       .fa-shopping-cart {
         border-left : @gray 2px solid;
         border-right: @gray 2px solid;
-        /* padding     : 0 25px; */
+        padding     : 0 20px;
       }
-
-      /* .fa-user {
-        padding-left: 25px;
-      } */
     }
+
+    #navbarExternal {
+      display         : grid;
+      justify-items   : end;
+      background-color: transparent;
+    }
+
+    ul {
+      list-style   : none;
+      margin-bottom: 0;
+
+      li {
+
+        a {
+          color          : white;
+          text-decoration: none;
+
+          &:active {
+            color: red;
+          }
+        }
+      }
+    }
+
   }
 }
 
 .promotion {
-  color      : white;
   padding-top: 330px;
 
   .text-large {
@@ -114,11 +191,6 @@ header {
 
   .text-medium {
     font-family: @font-bold;
-    font-size  : 40px;
-  }
-
-  .text-small {
-    width: 550px;
   }
 
   .promotion-btn {
@@ -127,6 +199,7 @@ header {
     border          : white 1px solid;
     text-transform  : uppercase;
     cursor          : pointer;
+    padding         : 15px 45px;
   }
 }
 
@@ -143,7 +216,7 @@ header {
   div:nth-child(even) {
     background-color: white;
     .grid-center();
-    height: 250px;
+    height: 265px;
 
     img {
       align-self: end;
@@ -155,8 +228,6 @@ header {
     }
 
     .content {
-      color     : @gray;
-      text-align: center;
       padding   : 0 50px;
       align-self: start;
     }
@@ -164,13 +235,13 @@ header {
 }
 
 .product {
-  margin-top: 90px;
+  margin-top: 80px;
 
   .product-tab {
-    text-align: center;
 
     .tab-title {
       font-family: @font-bold;
+      text-align: center;
       .text-bold();
     }
 
@@ -181,10 +252,10 @@ header {
   }
 
   .product-list {
-    margin-top: 43px;
+    margin-top: 50px;
 
     .item {
-      padding-bottom: 70px;
+      padding-bottom: 75px;
       position      : relative;
 
       &:hover {
@@ -199,17 +270,17 @@ header {
 
       ul.product-icon {
         list-style: none;
-        color     : @gray;
         position  : absolute;
-        right     : 0;
+        right     : 40px;
         top       : 0;
         z-index   : 2;
         display   : none;
+        padding   : 0;
 
         li {
-          border : 1px #dddddd solid;
-          padding: 0 5px;
-          margin : 23px;
+          border    : 1px #dddddd solid;
+          padding   : 0 5px;
+          margin-top: 24px;
 
           &:hover {
             background-color: red;
@@ -237,7 +308,7 @@ header {
 }
 
 .feedback {
-  margin-top: 52px;
+  margin-top: 60px;
   text-align: center;
 
   .feedback-title {
@@ -255,31 +326,29 @@ header {
       border-radius  : 50%;
       object-fit     : cover;
       object-position: 40%;
-      margin         : auto;
+      margin         : 50px auto 0;
     }
 
     .feedback-content {
-      color      : @gray;
       line-height: 30px;
-      margin-top : 30px;
+      margin-top : 25px;
       font-size  : 18px;
     }
 
     .customer-name {
       .text-bold();
       font-family: @font-bold;
-      display    : block;
+      margin-top : 30px;
     }
 
     .customer-type {
-      color        : @gray;
       margin-bottom: 40px;
     }
   }
 }
 
 .brand {
-  margin-top: 130px;
+  margin-top: 115px;
 }
 
 footer {
@@ -291,12 +360,7 @@ footer {
     padding: 100px 0 30px;
   }
 
-  .about-text {
-    color: @gray;
-  }
-
   .about-icon {
-    color: @gray;
 
     i {
       margin      : 0 18px 60px;
@@ -308,19 +372,16 @@ footer {
   }
 
   .info {
-    /* .wrapper(); */
     border-top: 1px solid #444444;
 
     .info-title {
       text-transform: uppercase;
       font-size     : 18px;
       font-family   : @font-bold;
-      color         : white;
     }
 
     .info-content {
       font-family: @font-regular;
-      color      : @gray;
 
       span {
         display    : block;
@@ -337,11 +398,20 @@ footer {
     background-color: black;
     height          : 50px;
     margin-top      : 45px;
-    color           : @gray;
     .grid-center();
   }
 }
 
-.owl-theme .owl-nav.disabled+.owl-dots {
-  margin-top: 0 !important;
+.owl-theme {
+  .owl-dots {
+    margin-top: 35px !important;
+
+    .owl-dot {
+      &:hover {
+        span {
+          background-color: red !important;
+        }
+      }
+    }
+  }
 }

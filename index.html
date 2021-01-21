@@ -17,33 +17,74 @@
     <nav>
       <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="nav-logo col col-lg-3">
             <a href="#">
               <img src="./images/logo.png" alt="Gymax-logo">
             </a>
           </div>
-          <div class="col d-flex align-items-center">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Classes</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contacts</a></li>
+          <div class="nav-link col">
+            <ul class="row ps-0">
+              <li class="col me-4"><a href="#">Home</a></li>
+              <li class="col me-4"><a href="#">Pages</a></li>
+              <li class="col me-4"><a href="#">Classes</a></li>
+              <li class="col me-4"><a href="#">Portfolio</a></li>
+              <li class="col me-4"><a href="#">Blog</a></li>
+              <li class="col me-4"><a href="#">Contacts</a></li>
             </ul>
           </div>
           <div class="nav-icon col-2 d-flex align-items-center justify-content-end">
-            <div class="row">
-              <i class="col fas fa-search"></i>
-              <i class="col fas fa-shopping-cart"></i>
-              <i class="col fas fa-user"></i>
+            <div class="col">
+              <i class="fas fa-search pe-4"></i>
+            </div>
+            <div class="col">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="col">
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+
+          <nav class="col navbar navbar-dark" id="navbarExternal">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-secondary p-3">
+              <div class="col d-flex align-items-center">
+                <ul class="row ps-0">
+                  <li class="col"><a href="#">Home</a></li>
+                  <li class="col"><a href="#">Pages</a></li>
+                  <li class="col"><a href="#">Classes</a></li>
+                  <li class="col"><a href="#">Portfolio</a></li>
+                  <li class="col"><a href="#">Blog</a></li>
+                  <li class="col"><a href="#">Contacts</a></li>
+                  <li class="col">
+                    <a href="#">
+                      <i class="fas fa-search pe-4"></i>
+                    </a>
+                  </li>
+                  <li class="col me-4">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart px-4"></i>
+                    </a>
+                  </li>
+                  <li class="col me-4">
+                    <a href="#">
+                      <i class="fas fa-user"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </nav>
 
-    <section class="promotion container">
+    <section class="promotion container text-white">
       <div class="row">
         <div class="col">
           <span class="text-large">
@@ -53,7 +94,7 @@
       </div>
       <div class="row mt-4">
         <div class="col">
-          <span class="text-medium">
+          <span class="text-medium fs-1">
             Best body fitness
           </span>
         </div>
@@ -70,7 +111,7 @@
 
       <div class="row mt-5 pt-4">
         <div class="col">
-          <span class="promotion-btn px-5 py-3">shop now</span>
+          <span class="promotion-btn">shop now</span>
         </div>
       </div>
     </section>
@@ -78,44 +119,44 @@
 
   <div class="container">
     <section class="gallery row">
-      <div class="col-sm-4 col-lg-4 pe-0">
+      <div class="gallery-item col-sm-6 col-lg-4">
         <img src="./images/gym-1.png" alt="">
       </div>
 
-      <div class="col-sm-4 col-lg-4 px-0">
+      <div class="gallery-item col-sm-6 col-lg-4">
         <img src="./images/strength.png" alt="">
         <span class="title">
           strength
         </span>
-        <span class="content">
+        <span class="content text-muted text-center">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </span>
       </div>
 
-      <div class="col-sm-4 col-lg-4 ps-0">
+      <div class="gallery-item col-sm-6 col-lg-4">
         <img src="./images/gym-2.png" alt="">
       </div>
 
-      <div class="col-sm-4 col-lg-4 pe-0">
+      <div class="gallery-item col-sm-6 col-lg-4">
         <img src="./images/dumbbells.png" alt="">
         <span class="title">
           dumbbells
         </span>
-        <span class="content">
+        <span class="content text-muted text-center">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </span>
       </div>
 
-      <div class="col-sm-4 col-lg-4 px-0">
+      <div class="gallery-item col-sm-6 col-lg-4">
         <img src="./images/gym-3.png" alt="">
       </div>
 
-      <div class="col-sm-4 col-lg-4 ps-0">
+      <div class="gallery-item col-sm-6 col-lg-4">
         <img src="./images/rack-and-cages.png" alt="">
         <span class="title">
           power rack & cages
         </span>
-        <span class="content">
+        <span class="content text-muted text-center">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </span>
       </div>
@@ -123,20 +164,18 @@
 
     <section class="product">
       <div class="product-tab row">
-        <div class="col col-lg-2 ms-2" id="top-sellers">
-          <span class="tab-title">
-            top sellers
-          </span>
-        </div>
-        <div class="col col-lg-2" id="featured">
-          <span class="tab-title">
-            featured
-          </span>
-        </div>
-        <div class="col col-lg-2" id="most-reviews">
-          <span class="tab-title">
-            most reviews
-          </span>
+        <div class="col col-xl-5">
+          <div class="row">
+            <span class="col tab-title px-3 pb-2" id="top-sellers">
+              top sellers
+            </span>
+            <span class="col tab-title px-3 pb-2" id="featured">
+              featured
+            </span>
+            <span class="col tab-title px-3 pb-2" id="most-reviews">
+              most reviews
+            </span>
+          </div>
         </div>
       </div>
 
@@ -147,7 +186,7 @@
             Body Champ Cardio
           </span>
           <span class="product-price">$342.00</span>
-          <ul class="product-icon">
+          <ul class="product-icon text-muted">
             <li><i class="fas fa-shopping-cart"></i></li>
             <li><i class="fas fa-eye"></i></li>
             <li><i class="fas fa-heart"></i></li>
@@ -160,7 +199,7 @@
             Body Solid GCEC340
           </span>
           <span class="product-price">$214.00</span>
-          <ul class="product-icon">
+          <ul class="product-icon text-muted">
             <li><i class="fas fa-shopping-cart"></i></li>
             <li><i class="fas fa-eye"></i></li>
             <li><i class="fas fa-heart"></i></li>
@@ -173,7 +212,7 @@
             Bowflex BXE116 Elliptical
           </span>
           <span class="product-price">$421.00</span>
-          <ul class="product-icon">
+          <ul class="product-icon text-muted">
             <li><i class="fas fa-shopping-cart"></i></li>
             <li><i class="fas fa-eye"></i></li>
             <li><i class="fas fa-heart"></i></li>
@@ -186,7 +225,7 @@
             ETHOS GHD
           </span>
           <span class="product-price">$152.00</span>
-          <ul class="product-icon">
+          <ul class="product-icon text-muted">
             <li><i class="fas fa-shopping-cart"></i></li>
             <li><i class="fas fa-eye"></i></li>
             <li><i class="fas fa-heart"></i></li>
@@ -199,7 +238,7 @@
             AFG Pro 7.2AI Incline
           </span>
           <span class="product-price">$252.00</span>
-          <ul class="product-icon">
+          <ul class="product-icon text-muted">
             <li><i class="fas fa-shopping-cart"></i></li>
             <li><i class="fas fa-eye"></i></li>
             <li><i class="fas fa-heart"></i></li>
@@ -212,7 +251,7 @@
             Weight Bench
           </span>
           <span class="product-price">$412.00</span>
-          <ul class="product-icon">
+          <ul class="product-icon text-muted">
             <li><i class="fas fa-shopping-cart"></i></li>
             <li><i class="fas fa-eye"></i></li>
             <li><i class="fas fa-heart"></i></li>
@@ -225,7 +264,7 @@
             ProForm Hiit Trainer Lite 5.9
           </span>
           <span class="product-price">$300.00</span>
-          <ul class="product-icon">
+          <ul class="product-icon text-muted">
             <li><i class="fas fa-shopping-cart"></i></li>
             <li><i class="fas fa-eye"></i></li>
             <li><i class="fas fa-heart"></i></li>
@@ -238,7 +277,7 @@
             Fitness Gear Pro
           </span>
           <span class="product-price">$124.00</span>
-          <ul class="product-icon">
+          <ul class="product-icon text-muted">
             <li><i class="fas fa-shopping-cart"></i></li>
             <li><i class="fas fa-eye"></i></li>
             <li><i class="fas fa-heart"></i></li>
@@ -256,33 +295,33 @@
           <div class="owl-carousel owl-theme">
             <div class="feedback-body">
               <img src="./images/feedback.png" alt="" class="feedback-image">
-              <p class="feedback-content">
+              <p class="feedback-content text-muted">
                 Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new
                 product
                 for me.
               </p>
-              <span class="customer-name">lina</span>
-              <span class="customer-type">Happy clients</span>
+              <span class="customer-name d-block">lina</span>
+              <span class="customer-type text-muted">Happy clients</span>
             </div>
             <div class="feedback-body">
               <img src="./images/feedback.png" alt="" class="feedback-image">
-              <p class="feedback-content">
+              <p class="feedback-content text-muted">
                 Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new
                 product
                 for me.
               </p>
-              <span class="customer-name">lina</span>
-              <span class="customer-type">Happy clients</span>
+              <span class="customer-name d-block">lina</span>
+              <span class="customer-type text-muted">Happy clients</span>
             </div>
             <div class="feedback-body">
               <img src="./images/feedback.png" alt="" class="feedback-image">
-              <p class="feedback-content">
+              <p class="feedback-content text-muted">
                 Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new
                 product
                 for me.
               </p>
-              <span class="customer-name">lina</span>
-              <span class="customer-type">Happy clients</span>
+              <span class="customer-name d-block">lina</span>
+              <span class="customer-type text-muted">Happy clients</span>
             </div>
           </div>
         </div>
@@ -321,12 +360,12 @@
           <div class="about-logo">
             <img src="./images/logo.png" alt="">
           </div>
-          <span class="about-text">
+          <span class="text-muted">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's
             standard dummy text ever since the 1500s, when an unknown printer took a galley of type
           </span>
-          <div class="about-icon">
+          <div class="about-icon text-muted">
             <i class="fab fa-facebook-f"></i>
             <i class="fab fa-twitter"></i>
             <i class="fab fa-google-plus-g"></i>
@@ -335,12 +374,12 @@
         </div>
       </div>
 
-      <div class="info row">
+      <div class="info row pt-4">
         <div class="col-6 col-lg-3 mt-5">
-          <span class="info-title">
+          <span class="info-title text-white">
             contact us
           </span>
-          <div class="info-content">
+          <div class="info-content text-muted">
             <span>
               <i class="fas fa-map-marker-alt"></i>
               200 Lincoln Ave, Salinas, CA 93901
@@ -360,10 +399,10 @@
           </div>
         </div>
         <div class="col-6 col-lg-3 mt-5">
-          <span class="info-title">
+          <span class="info-title text-white">
             my account
           </span>
-          <div class="info-content">
+          <div class="info-content text-muted">
             <span>My account</span>
             <span>Check out</span>
             <span>Register</span>
@@ -371,10 +410,10 @@
           </div>
         </div>
         <div class="col-6 col-lg-3 mt-5">
-          <span class="info-title">
+          <span class="info-title text-white">
             information
           </span>
-          <div class="info-content">
+          <div class="info-content text-muted">
             <span>About us</span>
             <span>Contact us</span>
             <span>Terms of user</span>
@@ -382,10 +421,10 @@
           </div>
         </div>
         <div class="col-6 col-lg-3 mt-5">
-          <span class="info-title">
+          <span class="info-title text-white">
             quick link
           </span>
-          <div class="info-content">
+          <div class="info-content text-muted">
             <span>New user</span>
             <span>Help center</span>
             <span>Report spam</span>
@@ -398,7 +437,7 @@
     <div class="copyright">
       <div class="container">
         <div class="row">
-          <div class="col text-center">
+          <div class="col text-center text-muted">
             <span>Copyright © 2019 Gymax - Design by ArrowHitech - All Rights Reserved</span>
           </div>
         </div>
@@ -409,6 +448,7 @@
 
 <script src="./owlcarousel/docs/assets/vendors/jquery.min.js"></script>
 <script src="./owlcarousel/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
 <script src="./js/owl.js"></script>
 
 </html>
