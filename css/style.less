@@ -5,8 +5,6 @@
 @bg-nav      : rgba(0, 0, 0, 0.6);
 @gray        : #777777;
 
-
-
 .text-bold {
   font-size     : 18px;
   font-weight   : bold;
@@ -98,14 +96,14 @@
 
 @media (max-width: 991.98px) {
 
-  .nav-link,
+  .navbar-link,
   .nav-icon {
     display: none !important;
   }
 }
 
 @media (max-width: 1190px) {
-  .nav-link {
+  .navbar-link {
     .col {
       margin-right: 15px !important;
     }
@@ -137,15 +135,22 @@ header {
     align-items          : center;
     font-size            : 16px;
 
-    .nav-link,
+    .navbar-link,
     .nav-logo {
       display    : flex;
       align-items: center;
     }
 
     .nav-icon {
-      color     : white;
       text-align: end;
+
+      a {
+        color: white;
+
+        &:hover {
+          color: red;
+        }
+      }
 
       .fa-shopping-cart {
         border-left : @gray 2px solid;
@@ -170,13 +175,12 @@ header {
           color          : white;
           text-decoration: none;
 
-          &:active {
+          &:hover {
             color: red;
           }
         }
       }
     }
-
   }
 }
 
@@ -235,17 +239,22 @@ header {
 }
 
 .product {
-  margin-top: 80px;
+  margin-top: 60px;
 
   .product-tab {
 
     .tab-title {
       font-family: @font-bold;
-      text-align: center;
+      text-align : center;
       .text-bold();
+      color: black;
     }
 
-    #top-sellers {
+    .nav-link {
+      border: none;
+    }
+
+    .active {
       color        : red;
       border-bottom: red 2px solid;
     }
@@ -285,6 +294,7 @@ header {
           &:hover {
             background-color: red;
             color           : white;
+            cursor          : pointer;
           }
         }
       }
@@ -402,16 +412,11 @@ footer {
   }
 }
 
-.owl-theme {
-  .owl-dots {
-    margin-top: 35px !important;
+.owl-theme .owl-nav.disabled+.owl-dots {
+  margin-top: 30px !important;
+}
 
-    .owl-dot {
-      &:hover {
-        span {
-          background-color: red !important;
-        }
-      }
-    }
-  }
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #dd2f31 !important;
 }
