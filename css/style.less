@@ -78,7 +78,7 @@
 }
 
 @media (min-width: 992px) {
-  #navbarExternal {
+  #nav__btn {
     display: none !important;
   }
 
@@ -176,8 +176,13 @@ header {
       justify-items   : end;
       background-color: transparent;
     }
-    .nav__btn-content{
-      background-color: rgba(0, 0, 0, 0.6);
+
+    .nav__btn-content {
+      background-color: @bg-nav;
+
+      li {
+        margin-bottom: 10px;
+      }
     }
 
     .navbar-toggler:focus {

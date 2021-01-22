@@ -55,7 +55,7 @@
   }
 }
 @media (min-width: 992px) {
-  #navbarExternal {
+  #nav__btn {
     display: none !important;
   }
   .gallery .gallery-item:nth-child(1),
@@ -136,6 +136,9 @@ header nav #nav__btn {
 }
 header nav .nav__btn-content {
   background-color: rgba(0, 0, 0, 0.6);
+}
+header nav .nav__btn-content li {
+  margin-bottom: 10px;
 }
 header nav .navbar-toggler:focus {
   box-shadow: none;
