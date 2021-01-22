@@ -129,10 +129,19 @@ header nav .nav-icon .fa-shopping-cart {
   border-right: #777777 2px solid;
   padding: 0 20px;
 }
-header nav #navbarExternal {
+header nav #nav__btn {
   display: grid;
   justify-items: end;
   background-color: transparent;
+}
+header nav .nav__btn-content {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+header nav .navbar-toggler:focus {
+  box-shadow: none;
+}
+header nav .fa-bars {
+  color: white;
 }
 header nav ul {
   list-style: none;
