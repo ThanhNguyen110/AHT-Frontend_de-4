@@ -185,12 +185,12 @@ header nav ul li a:hover {
   object-fit: cover;
 }
 .gallery .gallery__item:nth-child(even) {
+  height: 265px;
   background-color: white;
   background-clip: content-box;
   display: grid;
   justify-items: center;
   align-items: center;
-  height: 265px;
 }
 .gallery .gallery__item:nth-child(even) img {
   align-self: end;
@@ -218,10 +218,10 @@ header nav ul li a:hover {
 .product .product__tab .tab__title {
   font-family: poppins-bold;
   text-align: center;
+  color: black;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
-  color: black;
 }
 .product .product__tab .nav-link {
   border: none;
