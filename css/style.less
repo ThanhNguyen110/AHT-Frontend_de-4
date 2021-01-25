@@ -84,17 +84,11 @@
 
     .gallery {
 
-        .gallery__item:nth-child(1),
-        .gallery__item:nth-child(2),
-        .gallery__item:nth-child(4),
-        .gallery__item:nth-child(5) {
+        .gallery__item:not(:nth-child(3)):not(:nth-child(6)) {
             padding-right: 0;
         }
 
-        .gallery__item:nth-child(2),
-        .gallery__item:nth-child(3),
-        .gallery__item:nth-child(5),
-        .gallery__item:nth-child(6) {
+        .gallery__item:not(:nth-child(1)):not(:nth-child(4)) {
             padding-left: 0;
         }
     }
@@ -257,7 +251,7 @@ header {
             align-self: end;
         }
 
-        .title {
+        .gallery__title {
             .text--bold();
             font-family: @font-bold;
         }
@@ -266,6 +260,16 @@ header {
             padding   : 0 50px;
             align-self: start;
             text-align: center;
+        }
+    }
+
+    div:nth-child(6) {
+        img {
+            align-self: center;
+        }
+
+        .gallery__title {
+            align-self: start;
         }
     }
 }
