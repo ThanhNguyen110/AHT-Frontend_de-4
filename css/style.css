@@ -224,13 +224,14 @@ header nav ul li a:hover {
 }
 .product .product__tab .nav-link {
   border: none;
+  padding: 0.7rem 1rem;
 }
 .product .product__tab .active {
   color: red;
   border-bottom: red 2px solid;
 }
 .product .product__list {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .product .product__list .item {
   padding-bottom: 75px;
@@ -343,7 +344,7 @@ footer .info .info__content {
 }
 footer .info .info__content span {
   display: block;
-  padding-top: 18px;
+  padding-top: 20px;
 }
 footer .info .info__content span i {
   margin-right: 10px;
@@ -351,13 +352,13 @@ footer .info .info__content span i {
 footer .copyright {
   background-color: black;
   height: 50px;
-  margin-top: 45px;
+  margin-top: 40px;
   display: grid;
   justify-items: center;
   align-items: center;
 }
 .owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: 35px !important;
+  margin-top: 40px !important;
 }
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
