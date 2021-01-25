@@ -157,7 +157,6 @@ header nav ul li a:hover {
   color: white;
   border: white 1px solid;
   text-transform: uppercase;
-  cursor: pointer;
   padding: 15px 45px;
 }
 .gallery {
