@@ -84,11 +84,11 @@
 
     .gallery {
 
-        .gallery__item:not(:nth-child(3)):not(:nth-child(6)) {
+        .gallery__item:not(:nth-child(3n)) {
             padding-right: 0;
         }
 
-        .gallery__item:not(:nth-child(1)):not(:nth-child(4)) {
+        .gallery__item:not(:nth-child(3n+1)) {
             padding-left: 0;
         }
     }

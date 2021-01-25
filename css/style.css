@@ -58,10 +58,10 @@
   #nav__btn {
     display: none !important;
   }
-  .gallery .gallery__item:not(:nth-child(3)):not(:nth-child(6)) {
+  .gallery .gallery__item:not(:nth-child(3n)) {
     padding-right: 0;
   }
-  .gallery .gallery__item:not(:nth-child(1)):not(:nth-child(4)) {
+  .gallery .gallery__item:not(:nth-child(3n+1)) {
     padding-left: 0;
   }
 }
