@@ -1,10 +1,10 @@
 @import "font.css";
-.text-bold {
+.text--bold {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
 }
-.grid-center {
+.grid--center {
   display: grid;
   justify-items: center;
   align-items: center;
