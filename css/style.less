@@ -69,7 +69,6 @@
     }
 
     .gallery {
-
         .gallery__item:not(:nth-child(3n)) {
             padding-right: 0;
         }
@@ -121,29 +120,39 @@ header {
         font-size            : 16px;
 
         .nav__link,
-        .nav__logo {
+        .nav__logo,
+        .nav__icon {
             display    : flex;
             align-items: center;
         }
 
         .nav__icon {
-            text-align     : end;
-            display        : flex;
-            align-items    : center;
-            justify-content: end;
+            justify-content: flex-end;
 
-            a {
-                color: white;
+            li {
+                display: inline;
 
-                &:hover {
-                    color: red;
+                a {
+                    color: white;
+
+                    &:hover {
+                        color: red;
+                    }
                 }
+            }
+
+            .fa-search {
+                padding-right: 25px;
             }
 
             .fa-shopping-cart {
                 border-left : @gray 2px solid;
                 border-right: @gray 2px solid;
-                padding     : 0 20px;
+                padding     : 0 25px;
+            }
+
+            .fa-user {
+                padding-left: 25px;
             }
         }
 
@@ -210,7 +219,8 @@ header {
         color           : white;
         border          : white 1px solid;
         text-transform  : uppercase;
-        padding         : 15px 45px;
+        padding         : 14px 41px;
+        margin-top: 53px;
     }
 }
 
