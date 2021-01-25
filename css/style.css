@@ -271,7 +271,7 @@ header nav ul li a:hover {
   padding-left: 30px;
 }
 .feedback {
-  margin-top: 60px;
+  margin-top: 58px;
   text-align: center;
 }
 .feedback .feedback__title {
@@ -305,6 +305,13 @@ header nav ul li a:hover {
 }
 .brand {
   margin-top: 115px;
+  text-align: center;
+}
+.brand .brand__item {
+  margin-top: 15px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 footer {
   background-color: #222222;
@@ -347,7 +354,7 @@ footer .copyright {
   align-items: center;
 }
 .owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: 30px !important;
+  margin-top: 35px !important;
 }
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
