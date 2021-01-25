@@ -137,6 +137,9 @@ header nav .nav__btn-content {
 header nav .nav__btn-content li {
   margin-bottom: 10px;
 }
+header nav .navbar-toggler {
+  padding: 0;
+}
 header nav .navbar-toggler:focus {
   box-shadow: none;
 }
