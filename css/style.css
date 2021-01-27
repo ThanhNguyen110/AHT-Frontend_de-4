@@ -1,4 +1,11 @@
-@import "font.css";
+@font-face {
+  font-family: poppins-bold;
+  src: url(../font/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins-regular;
+  src: url(../font/Poppins-Regular.ttf);
+}
 @media (min-width: 1199.98px) {
   .container-xl {
     max-width: 1194px;
