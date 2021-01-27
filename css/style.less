@@ -7,13 +7,13 @@
 @bg-nav      : rgba(0, 0, 0, 0.6);
 @gray        : #777777;
 
-.text--bold() {
+.text-bold() {
     font-size     : 18px;
     font-weight   : bold;
     text-transform: uppercase;
 }
 
-.grid--center() {
+.grid-center() {
     display      : grid;
     justify-items: center;
     align-items  : center;
@@ -130,17 +130,17 @@ header {
         padding-top: 330px;
     }
 
-    .text--large {
+    .text-large {
         text-transform: capitalize;
         font-family   : @font-bold;
         font-size     : 60px;
     }
 
-    .text--medium {
+    .text-medium {
         font-family: @font-bold;
     }
 
-    & &__btn {
+    .promotion__btn {
         background-color: transparent;
         color           : white;
         border          : white 1px solid;
@@ -160,7 +160,7 @@ header {
         margin-top: -80px;
     }
 
-    & &__item:nth-child(odd) {
+    .gallery__item:nth-child(odd) {
         img {
             width     : 100%;
             height    : 100%;
@@ -168,18 +168,18 @@ header {
         }
     }
 
-    & &__item:nth-child(even) {
+    .gallery__item:nth-child(even) {
         height          : 265px;
         background-color: white;
         background-clip : content-box;
-        .grid--center();
+        .grid-center();
 
         img {
             align-self: end;
         }
 
         .gallery__title {
-            .text--bold();
+            .text-bold();
             font-family: @font-bold;
         }
 
@@ -190,7 +190,7 @@ header {
         }
     }
 
-    & &__item:nth-child(6) {
+    .gallery__item:nth-child(6) {
         img {
             align-self: center;
         }
@@ -206,13 +206,13 @@ header {
         margin-top: 60px;
     }
 
-    & &__tab {
+    .product__tab {
 
         .tab__title {
             font-family: @font-bold;
             text-align : center;
             color      : black;
-            .text--bold();
+            .text-bold();
         }
 
         .nav-link {
@@ -226,7 +226,7 @@ header {
         }
     }
 
-    & &__list {
+    .product__list {
         margin-top: 40px;
 
         .product__item {
@@ -234,7 +234,7 @@ header {
             position      : relative;
 
             &:hover {
-                ul.product__icon {
+                .product__icon {
                     display: block;
                 }
 
@@ -248,7 +248,7 @@ header {
                 transition: all 0.5s;
             }
 
-            ul.product__icon {
+            .product__icon {
                 list-style: none;
                 position  : absolute;
                 right     : 40px;
@@ -294,14 +294,14 @@ header {
         text-align: center;
     }
 
-    & &__title {
+    .feedback__title {
         text-transform: capitalize;
         font-size     : 36px;
         color         : black;
         font-family   : @font-bold;
     }
 
-    & &__body {
+    .feedback__body {
         .feedback__image {
             width          : 80px;
             height         : 80px;
@@ -318,7 +318,7 @@ header {
         }
 
         .customer__name {
-            .text--bold();
+            .text-bold();
             font-family: @font-bold;
             margin-top : 30px;
         }
@@ -335,9 +335,9 @@ header {
         text-align: center;
     }
 
-    & &__item {
+    .brand__item {
         margin-top: 15px;
-        .grid--center();
+        .grid-center();
     }
 }
 
@@ -348,19 +348,17 @@ footer {
         margin-top      : 40px;
     }
 
-    .about {
-        &__logo {
-            padding: 100px 0 30px;
-        }
+    .about__logo {
+        padding: 100px 0 30px;
+    }
 
-        &__icon {
+    .about__icon {
 
-            i {
-                margin      : 0 18px 60px;
-                font-size   : 18px;
-                padding-top : 45px;
-                padding-left: 6px;
-            }
+        i {
+            margin      : 0 18px 60px;
+            font-size   : 18px;
+            padding-top : 45px;
+            padding-left: 6px;
         }
     }
 
@@ -369,16 +367,16 @@ footer {
             border-top: 1px solid #444444;
         }
 
-        &__title {
+        .info__title {
             text-transform: uppercase;
             font-size     : 18px;
             font-family   : @font-bold;
         }
 
-        &__content {
+        .info__content {
             span {
                 display    : block;
-                padding-top: 20px;
+                padding-top: 17px;
 
                 i {
                     margin-right: 10px;
@@ -391,12 +389,12 @@ footer {
         background-color: black;
         height          : 50px;
         margin-top      : 40px;
-        .grid--center();
+        .grid-center();
     }
 }
 
 .owl-theme .owl-nav.disabled+.owl-dots {
-    margin-top: 40px !important;
+    margin-top: 30px !important;
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
