@@ -5,6 +5,13 @@
 @bg-nav      : rgba(0, 0, 0, 0.6);
 @gray        : #777777;
 
+@size: {
+    sm: 575.98px;
+    md: 767.98px;
+    lg: 991.98px;
+    xl: 1199.98px;
+}
+
 .text--bold() {
     font-size     : 18px;
     font-weight   : bold;
@@ -15,13 +22,6 @@
     display      : grid;
     justify-items: center;
     align-items  : center;
-}
-
-@size: {
-    sm: 575.98px;
-    md: 767.98px;
-    lg: 991.98px;
-    xl: 1199.98px;
 }
 
 @media (min-width: @size[xl]) {
@@ -54,11 +54,11 @@
 
 @media (min-width: @size[sm]) and (max-width: @size[lg]) {
     .gallery {
-        .gallery__item:nth-child(odd) {
+        & &__item:nth-child(odd) {
             padding-right: 0;
         }
 
-        .gallery__item:nth-child(even) {
+        & &__item:nth-child(even) {
             padding-left: 0;
         }
     }
@@ -76,11 +76,11 @@
     }
 
     .gallery {
-        .gallery__item:not(:nth-child(3n)) {
+        & &__item:not(:nth-child(3n)) {
             padding-right: 0;
         }
 
-        .gallery__item:not(:nth-child(3n+1)) {
+        & &__item:not(:nth-child(3n+1)) {
             padding-left: 0;
         }
     }
@@ -209,7 +209,9 @@ header {
 }
 
 .promotion {
-    padding-top: 330px;
+    & {
+        padding-top: 330px;
+    }
 
     .text--large {
         text-transform: capitalize;
@@ -232,7 +234,9 @@ header {
 }
 
 .gallery {
-    margin-top: -80px;
+    & {
+        margin-top: -80px;
+    }
 
     & &__item:nth-child(odd) {
         img {
@@ -276,7 +280,9 @@ header {
 }
 
 .product {
-    margin-top: 60px;
+    & {
+        margin-top: 60px;
+    }
 
     & &__tab {
 
@@ -356,8 +362,10 @@ header {
 }
 
 .feedback {
-    margin-top: 58px;
-    text-align: center;
+    & {
+        margin-top: 58px;
+        text-align: center;
+    }
 
     & &__title {
         text-transform: capitalize;
@@ -367,7 +375,6 @@ header {
     }
 
     & &__body {
-
         .feedback__image {
             width          : 80px;
             height         : 80px;
@@ -396,8 +403,10 @@ header {
 }
 
 .brand {
-    margin-top: 115px;
-    text-align: center;
+    & {
+        margin-top: 115px;
+        text-align: center;
+    }
 
     & &__item {
         margin-top: 15px;
@@ -406,9 +415,11 @@ header {
 }
 
 footer {
-    background-color: #222222;
-    height          : 100%;
-    margin-top      : 40px;
+    & {
+        background-color: #222222;
+        height          : 100%;
+        margin-top      : 40px;
+    }
 
     .about {
         &__logo {
@@ -427,7 +438,9 @@ footer {
     }
 
     .info {
-        border-top: 1px solid #444444;
+        & {
+            border-top: 1px solid #444444;
+        }
 
         &__title {
             text-transform: uppercase;
