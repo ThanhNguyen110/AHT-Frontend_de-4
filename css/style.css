@@ -1,14 +1,4 @@
 @import "font.css";
-.text--bold {
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.grid--center {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-}
 @media (min-width: 1199.98px) {
   .container-xl {
     max-width: 1194px;
