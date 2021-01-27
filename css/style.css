@@ -215,17 +215,17 @@ header nav ul li a:hover {
 .product .product__list {
   margin-top: 40px;
 }
-.product .product__list .item {
+.product .product__list .product__item {
   padding-bottom: 75px;
   position: relative;
 }
-.product .product__list .item:hover ul.product__icon {
+.product .product__list .product__item:hover ul.product__icon {
   display: block;
 }
-.product .product__list .item img {
+.product .product__list .product__item img {
   width: 100%;
 }
-.product .product__list .item ul.product__icon {
+.product .product__list .product__item ul.product__icon {
   list-style: none;
   position: absolute;
   right: 40px;
@@ -234,12 +234,12 @@ header nav ul li a:hover {
   display: none;
   padding: 0;
 }
-.product .product__list .item ul.product__icon li {
+.product .product__list .product__item ul.product__icon li {
   border: 1px #dddddd solid;
   padding: 0 5px;
   margin-top: 24px;
 }
-.product .product__list .item ul.product__icon li:hover {
+.product .product__list .product__item ul.product__icon li:hover {
   background-color: red;
   color: white;
   cursor: pointer;
@@ -316,16 +316,16 @@ footer .about__icon i {
 footer .info {
   border-top: 1px solid #444444;
 }
-footer .info .info__title {
+footer .info__title {
   text-transform: uppercase;
   font-size: 18px;
   font-family: poppins-bold;
 }
-footer .info .info__content span {
+footer .info__content span {
   display: block;
   padding-top: 20px;
 }
-footer .info .info__content span i {
+footer .info__content span i {
   margin-right: 10px;
 }
 footer .copyright {
