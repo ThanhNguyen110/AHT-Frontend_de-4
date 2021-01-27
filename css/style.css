@@ -321,9 +321,6 @@ footer .info .info__title {
   font-size: 18px;
   font-family: poppins-bold;
 }
-footer .info .info__content {
-  font-family: poppins-regular;
-}
 footer .info .info__content span {
   display: block;
   padding-top: 20px;
