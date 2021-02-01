@@ -23,13 +23,13 @@
                         </a>
                     </div>
                     <div class="nav__link col">
-                        <ul class="row ps-0">
-                            <li class="col me-4"><a href="#">Home</a></li>
-                            <li class="col me-4"><a href="#">Pages</a></li>
-                            <li class="col me-4"><a href="#">Classes</a></li>
-                            <li class="col me-4"><a href="#">Portfolio</a></li>
-                            <li class="col me-4"><a href="#">Blog</a></li>
-                            <li class="col me-4"><a href="#">Contacts</a></li>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Classes</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contacts</a></li>
                         </ul>
                     </div>
                     <ul class="nav__icon col-lg-2">
@@ -77,31 +77,18 @@
             </div>
         </nav>
 
-        <section class="promotion container-xl text-white">
-            <div class="row">
-                <div class="col">
-                    <span class="text-large">
-                        dumbbells shop
-                    </span>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col">
-                    <span class="text-medium fs-1">
-                        Best body fitness
-                    </span>
-                </div>
-            </div>
-            <div class="row mt-4 pt-1">
-                <div class="col col-sm-6 pe-5">
-                    <span>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer
-                    </span>
-                </div>
-            </div>
+        <section class="promotion container-xl">
+            <span class="text-lg">
+                dumbbells shop
+            </span>
+            <span class="text-md">
+                Best body fitness
+            </span>
+            <span class="text-sm">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever since the 1500s, when an unknown printer
+            </span>
             <button class="promotion__btn btn">shop now</button>
-            </div>
         </section>
     </header>
 
@@ -112,7 +99,7 @@
                 <img src="./images/gym-1.png" alt="">
             </div>
 
-            <div class="gallery__item col-sm-6 col-lg-4">
+            <div class="gallery__item strength col-sm-6 col-lg-4">
                 <img src="./images/strength.png" alt="">
                 <span class="gallery__title">
                     strength
@@ -126,8 +113,8 @@
                 <img src="./images/gym-2.png" alt="">
             </div>
 
-            <div class="gallery__item col-sm-6 col-lg-4">
-                <img src="./images/dumbbells.png" alt="">
+            <div class="gallery__item dumbbells col-sm-6 col-lg-4">
+                <img src="./images/dumbbells.png" alt="" class="dumbbells">
                 <span class="gallery__title">
                     dumbbells
                 </span>
@@ -140,8 +127,8 @@
                 <img src="./images/gym-3.png" alt="">
             </div>
 
-            <div class="gallery__item col-sm-6 col-lg-4">
-                <img src="./images/rack-and-cages.png" alt="">
+            <div class="gallery__item power col-sm-6 col-lg-4">
+                <img src="./images/rack-and-cages.png" alt="" class="power">
                 <span class="gallery__title">
                     power rack & cages
                 </span>
@@ -304,8 +291,8 @@
                                 product
                                 for me.
                             </p>
-                            <span class="customer__name d-block">lina</span>
-                            <span class="customer__type text-muted">Happy clients</span>
+                            <span class="customer__name">lina</span>
+                            <span class="customer__type">Happy clients</span>
                         </div>
                         <div class="feedback__body">
                             <img src="./images/feedback.png" alt="" class="feedback__image">
@@ -370,61 +357,67 @@
                 </div>
             </div>
 
-            <div class="info row pt-4">
-                <div class="col-12 col-sm-6 col-xl-3 mt-5">
-                    <span class="info__title text-white">
+            <div class="row">
+                <div class="col">
+                    <div class="border-footer"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-xl-3 info">
+                    <span class="info__title">
                         contact us
                     </span>
-                    <div class="info__content text-muted">
-                        <span>
+                    <div class="info__content">
+                        <a href="#">
                             <i class="fas fa-map-marker-alt"></i>
                             200 Lincoln Ave, Salinas, CA 93901
-                        </span>
-                        <span>
+                        </a>
+                        <a href="#">
                             <i class="fas fa-phone"></i>
                             023 32423 223
-                        </span>
-                        <span>
+                        </a>
+                        <a href="#">
                             <i class="fas fa-envelope"></i>
                             gymax@example.com
-                        </span>
-                        <span>
+                        </a>
+                        <a href="#">
                             <i class="fas fa-clock"></i>
                             9:00 - 20:00 All day
-                        </span>
+                        </a>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-xl-3 mt-5">
-                    <span class="info__title text-white">
+                <div class="col-12 col-sm-6 col-xl-3 info">
+                    <span class="info__title">
                         my account
                     </span>
-                    <div class="info__content text-muted">
-                        <span>My account</span>
-                        <span>Check out</span>
-                        <span>Register</span>
-                        <span>Login</span>
+                    <div class="info__content">
+                        <a href="#">My account</a>
+                        <a href="#">Check out</a>
+                        <a href="#">Register</a>
+                        <a href="#">Login</a>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-xl-3 mt-5">
-                    <span class="info__title text-white">
+                <div class="col-12 col-sm-6 col-xl-3 info">
+                    <span class="info__title">
                         information
                     </span>
-                    <div class="info__content text-muted">
-                        <span>About us</span>
-                        <span>Contact us</span>
-                        <span>Terms of user</span>
-                        <span>Privacy Policy</span>
+                    <div class="info__content">
+                        <a href="#">About us</a>
+                        <a href="#">Contact us</a>
+                        <a href="#"> Terms of user</a>
+                        <a href="#">Privacy Policy</a>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-xl-3 mt-5">
-                    <span class="info__title text-white">
+                <div class="col-12 col-sm-6 col-xl-3 info">
+                    <span class="info__title">
                         quick link
                     </span>
-                    <div class="info__content text-muted">
-                        <span>New user</span>
-                        <span>Help center</span>
-                        <span>Report spam</span>
-                        <span>FAQs</span>
+                    <div class="info__content">
+                        <a href="#">New user</a>
+                        <a href="#">Help center</a>
+                        <a href="#">Report spam</a>
+                        <a href="#">FAQs</a>
                     </div>
                 </div>
             </div>
@@ -433,7 +426,7 @@
         <div class="copyright">
             <div class="container-xl">
                 <div class="row">
-                    <div class="col text-center text-muted">
+                    <div class="col text-center">
                         <span>Copyright © 2019 Gymax - Design by ArrowHitech - All Rights Reserved</span>
                     </div>
                 </div>

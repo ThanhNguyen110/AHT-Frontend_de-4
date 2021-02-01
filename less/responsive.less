@@ -5,18 +5,50 @@
     xl: 1199.98px;
 }
 
+@media (min-width: @size[lg]) {
+    #nav__btn {
+        display: none !important;
+    }
+
+    .gallery__item:not(:nth-child(3n)) {
+        padding-right: 0;
+    }
+
+    .gallery__item:not(:nth-child(3n+1)) {
+        padding-left: 0;
+    }
+
+}
+
 @media (min-width: @size[xl]) {
     .container-xl {
         max-width: 1194px;
+        padding: 0 10px;
+    }
+
+    .row>* {
+        padding: 0 15px;
+    }
+
+    .nav__link {
+        padding: 0;
+    }
+
+    .product__item {
+        &:hover {
+            img {
+                transform: scale(1.2);
+            }
+        }
     }
 }
 
 @media (max-width: @size[sm]) {
-    .text-large {
+    .text-lg {
         font-size: 2rem !important;
     }
 
-    .text-medium {
+    .text-md {
         font-size: 1.4rem !important;
     }
 
@@ -31,44 +63,8 @@
         height             : 650px !important;
     }
 
-    .promotion{
+    .promotion {
         padding-top: 130px !important;
-    }
-
-    .product__icon {
-        li {
-            margin-top: 10px !important;
-        }
-    }
-}
-
-@media (min-width: @size[sm]) and (max-width: @size[lg]) {
-    .gallery__item:nth-child(odd) {
-        padding-right: 0;
-    }
-
-    .gallery__item:nth-child(even) {
-        padding-left: 0;
-    }
-}
-
-@media (min-width: @size[lg]) and (max-width: @size[xl]) {
-    .text-large {
-        font-size: 60px;
-    }
-}
-
-@media (min-width: @size[lg]) {
-    #nav__btn {
-        display: none !important;
-    }
-
-    .gallery__item:not(:nth-child(3n)) {
-        padding-right: 0;
-    }
-
-    .gallery__item:not(:nth-child(3n+1)) {
-        padding-left: 0;
     }
 }
 
@@ -78,6 +74,12 @@
     .nav__icon {
         display: none !important;
     }
+
+    .product__icon {
+        li {
+            margin-top: 10px !important;
+        }
+    }
 }
 
 @media (max-width: @size[xl]) {
@@ -85,5 +87,11 @@
         .col {
             margin-right: 15px !important;
         }
+    }
+}
+
+@media (min-width: @size[lg]) and (max-width: @size[xl]) {
+    .text-lg {
+        font-size: 60px;
     }
 }
