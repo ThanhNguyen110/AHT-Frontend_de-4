@@ -23,7 +23,7 @@
 @media (min-width: @size[xl]) {
     .container-xl {
         max-width: 1194px;
-        padding: 0 10px;
+        padding  : 0 10px;
     }
 
     .row>* {
@@ -41,6 +41,10 @@
             }
         }
     }
+
+    .text-sm {
+        width: 45%;
+    }
 }
 
 @media (max-width: @size[sm]) {
@@ -54,6 +58,12 @@
 
     .feedback__title {
         font-size: 1.4rem !important;
+    }
+
+    .product__tab {
+        ul {
+            display: block;
+        }
     }
 }
 
@@ -79,6 +89,10 @@
         li {
             margin-top: 10px !important;
         }
+    }
+
+    .gallery__item {
+        margin-bottom: 12px;
     }
 }
 

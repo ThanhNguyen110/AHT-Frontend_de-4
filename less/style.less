@@ -1,5 +1,5 @@
-@import "./font.css";
-@import "./responsive.css";
+@import "./_font.css";
+@import "./_responsive.css";
 
 @font-regular : poppins-regular;
 @font-bold    : poppins-bold;
@@ -14,11 +14,6 @@
     font-size     : 18px;
     font-weight   : bold;
     text-transform: uppercase;
-}
-
-.grid-center() {
-    display      : grid;
-    justify-items: center;
 }
 
 body {
@@ -45,30 +40,34 @@ header {
         width                : 100%;
         z-index              : 3;
 
-        .nav__link,
-        .nav__logo,
-        .nav__icon {
+        .nav__content {
             align-items: center;
             display    : flex;
         }
 
         .nav__link {
+            padding-left: 70px;
+
             ul {
-                padding-left: 5px;
+                padding-left: 19px;
                 padding-top : 5px;
 
                 li {
-                    display     : inline-block;
+                    display: inline-block;
+                }
+
+                li:not(:last-child) {
                     margin-right: 48px;
                 }
             }
         }
 
         .nav__icon {
-            justify-content: flex-end;
+            padding-left: 130px;
+            text-align: right;
 
             li {
-                display: inline;
+                display: inline-block;
 
                 a {
                     color: white;
@@ -80,17 +79,17 @@ header {
             }
 
             .fa-search {
-                padding-right: 25px;
+                padding-right: 23px;
             }
 
             .fa-shopping-cart {
                 border-left : @gray 2px solid;
                 border-right: @gray 2px solid;
-                padding     : 0 25px;
+                padding     : 0 26px;
             }
 
             .fa-user {
-                padding-left: 25px;
+                padding-left: 19px;
             }
         }
 
@@ -162,7 +161,6 @@ header {
     .text-sm {
         display   : block;
         margin-top: 37px;
-        width     : 45%;
     }
 
     .promotion__btn {
@@ -366,9 +364,10 @@ header {
 }
 
 .brand__item {
-    .grid-center();
-    align-items: center;
-    margin-top : 15px;
+    align-items  : center;
+    display      : grid;
+    justify-items: center;
+    margin-top   : 15px;
 }
 
 footer {
@@ -420,18 +419,19 @@ footer {
     }
 
     .copyright {
-        .grid-center();
         align-items     : center;
         background-color: black;
         color           : @gray;
+        display         : grid;
         height          : 50px;
+        justify-items   : center;
         margin-top      : 30px;
     }
 }
 
 .owl-theme .owl-nav.disabled+.owl-dots {
-    margin-top : 32px !important;
     margin-left: 10px;
+    margin-top : 32px !important;
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
