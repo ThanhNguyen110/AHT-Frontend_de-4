@@ -25,10 +25,6 @@
     .gallery__item:not(:nth-child(3n+1)) {
         padding-left: 0;
     }
-
-    .product__icon {
-        display: none;
-    }
 }
 
 @media (min-width: @size[lg]) {
@@ -101,6 +97,12 @@
 
     .gallery__box {
         height: 250px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .product__icon {
+        display: none;
     }
 }
 
