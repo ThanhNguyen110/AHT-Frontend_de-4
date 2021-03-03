@@ -266,9 +266,9 @@ header {
         padding: 12px 17px;
     }
 
-    .active {
-        border-bottom: red 2px solid !important;
-        color        : red !important;
+    .nav-link.active {
+        border-bottom: red 2px solid;
+        color        : red;
     }
 }
 
@@ -352,7 +352,6 @@ header {
         margin            : 50px auto 0;
         object-fit        : cover;
         object-position   : 40%;
-        width             : 80px !important;
     }
 
     .feedback__content {
@@ -467,14 +466,18 @@ footer {
 
 .owl-theme .owl-nav.disabled+.owl-dots {
     margin-left: 10px;
-    margin-top : 32px !important;
+    margin-top : 32px;
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background-color: @bg-owl-dot  !important;
+    background-color: @bg-owl-dot;
 }
 
 .owl-theme .owl-dots .owl-dot {
     outline: none;
+}
+
+.owl-carousel .owl-item img {
+    width: 80px;
 }
